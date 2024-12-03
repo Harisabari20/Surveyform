@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Form for GFG survey
+    </title>
+</head>
+<style>
+    h1{
+        padding: 10px;
+        text-shadow: 10px 5px 10px rgb(28, 27, 27);
+        color: rgb(255, 255, 255);
+    }
+    body {
+       background-color: rgb(11, 233, 26);
+       font-family: 'Times New Roman', Times, serif;
+       text-align: center;
+    }
+    #form
+    {
+    background-color: rgb(191, 226, 233);
+    max-width: 500px;
+    padding: 30px 20px;
+    margin: 50px auto;
+    box-shadow: 2px 5px 10px black;
+    }
+    .form
+    {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .from label
+    {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .form input,
+    .form select,
+    .form textarea 
+      {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form input[type="radio"],
+        .form input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        button{
+            background-color: #44ff00;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+</style>
+<body>
+    <h1>GFG Recruitment Form</h1>
+<form id="form">
+    <div class="form">
+        <label>
+            Name
+        </label>
+        <input type="text"
+        placeholder="enter your name" />
+    </div>
+    <div class="form"
+       <label>
+        Email
+       </label>
+       <input type="text"
+        placeholder="enter your email"/>
+    </div>
+    <div class="form">
+        <label>
+            Age
+        </label>
+        <input type="text"
+        placeholder="enter your age"/>
+    </div>
+    <div class="form">
+        <label>
+             Which option would you prefer
+        </label>
+        <!dropdown option>
+        <select name="role">
+            <option value="student">Student</option>
+            <option value="intern ">Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div class="form">
+        <label>
+            Would you recommend <b>GFG</b> to your friend
+        </label>
+        <label for="recommand-1">
+            <input type="radio">Yes
+            </input>
+        </label>
+        <label for="recommend-2">
+          <input type="radio"/>No</input>
+        </label>
+        <label for="recommend-3">
+          <input type="radio"/>Maybe</input>
+        </label>
+    </div>
+        <div class="form">
+            <label>
+                Languages and framework known
+            </label>
+            <label for="inp-1">
+                <input type="checkbox">
+                Python
+                </input>
+            </label>
+            <label for="inp-2">
+                <input type="checkbox">
+                Java
+                </input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox">
+                Javascript
+                </input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox">
+                React
+                </input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox">
+                MongoDB
+                </input>
+            </label>
+            <label for="inp-6">
+                <input type="checkbox">
+                Django
+                </input>
+            </label>
+        </div>
+        <div class="form">
+            <label>
+                Why should we hire you,write your comments
+            </label>
+            <textarea name="comment" 
+            placeholder="enter your name">
+            </textarea>
+        </div>
+        <button type="submit" value="submit">
+          Submit
+        </button><br></br>
+        <small>
+            Developed by Hari sabari,visit <a href="https://github.com/Harisabari20">Pixelcoder</a>
+        </small>
+</form>
+</body>
+</html>
